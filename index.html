@@ -1,9 +1,46 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Title</title>
-  </head>
-  <body>
-    <p>Paragraph</p>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="immaculata, ics2o" />
+  <meta name="author" content="Shem Irekpita" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-purple.min.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="icon" type="image/png" sizes="180x190" href="favicon.png">
+  <title>Museum</title>
+</head>
+<body>
+  <script src="./js/script.js"></script>
+  <h1>Enter your age and day to get the museum price</h1>
+  <form>
+    <div>
+      <label for="age">Enter Age:</label><br>
+      <input type="number" id="age" placeholder="Enter your age" />
+    </div>
+
+    <br>
+
+    <div>
+      <label for="day">Select Day:</label><br>
+      <select id="day">
+        <option value="Sunday">Sunday</option>
+        <option value="Monday">Monday</option>
+        <option value="Tuesday">Tuesday</option>
+        <option value="Wednesday">Wednesday</option>
+        <option value="Thursday">Thursday</option>
+        <option value="Friday">Friday</option>
+        <option value="Saturday">Saturday</option>
+      </select>
+    </div>
+  </form>
+  <br>
+
+  <button type="button" onclick="Guess()">Display Price</button>
+
+  <div id="ans"></div>
+
+</body>
 </html>
